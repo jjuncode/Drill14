@@ -285,6 +285,7 @@ class Boy:
 
     def update(self):
         self.state_machine.update()
+        print(self.x, self.y)
 
     def handle_event(self, event):
         self.state_machine.handle_event(('INPUT', event))

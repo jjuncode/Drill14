@@ -38,6 +38,9 @@ def init():
     game_world.add_objects(server.balls, 1)
 
     server.boy.set_background(server.background)
+    for ball in server.balls:
+        ball.set_background(server.background)
+
 
 
 
